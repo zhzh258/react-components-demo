@@ -8,7 +8,7 @@ function Link({ href, children, className }) {
     const classes = classNames(
         "text-blue-500",
         className,
-        currentPath == href && "font-bold border-l-4 border-blue-500 pl-2"
+        currentPath === href && "font-bold border-l-4 border-blue-500 pl-2"
     )
 
     const handleClick = (event)=> {
