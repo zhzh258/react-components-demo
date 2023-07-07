@@ -1,19 +1,19 @@
 import Accordion from "../components/Accordion"
 
 function AccordionPage() {
-  // item is an array of obj: {label: ..., content: ...}
+  // item is an array of obj: [{label: ..., content: ...}, ...]
   const items = [
     {
-      label: "label 000",
-      content: "This is my first content\nnew line\nnew line\nnew line"
+      label: "label A",
+      content: "This is the first content"
     },
     {
-      label: "label 001",
-      content: "This is my second content\nnew line\nnew line\nnew line"
+      label: "label B",
+      content: "This is the second content"
     },
     {
-      label: "label 002",
-      content: "This is my third content\nnew line\nnew line\nnew line"
+      label: "label C",
+      content: "This is the third content"
     }
   ]
   

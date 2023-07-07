@@ -16,7 +16,7 @@ function App() {
     ]
 
     return (
-        <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
+        <div className="container mx-auto grid grid-cols-6 gap-4 mt-4 justify-between">
             <Sidebar links={links}/>
             <div className="col-span-5">
                 <Route path="/">

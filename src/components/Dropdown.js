@@ -26,10 +26,10 @@ function Dropdown({ options, value, onSelect }){
             if(!divEle.current)
                 return;
             if(divEle.current.contains(event.target)){ // event.target inside divEle.current
-                console.log("inside!")
+                // console.log("inside!")
                 // do nothing
             } else{ // event.target outside divEle.current
-                console.log("outside!")
+                // console.log("outside!")
                 // !isOpen
                 setIsOpen(false);
             }
@@ -66,7 +66,7 @@ function Dropdown({ options, value, onSelect }){
         return <div className="hover:bg-sky-100 rounded cursor-pointer p-1" key={index} onClick={()=> handleOptionClick(option)}>{option.label}</div>
     })
 
-    // tie the panel value to parent_state 'selection'
+    // bind the panel value to parent_state 'selection'
     
     return (
         <div ref={divEle} className="w-48 relative">

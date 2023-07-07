@@ -4,9 +4,9 @@ import NavigationContext from "../context/navigation"
 
 function Route({ path, children}) {
     const { currentPath } = useContext(NavigationContext);
-    if(path === currentPath){ // display this path
+    if(path === currentPath){ // show this path
         return children
-    } else{ // don't display this paht
+    } else{ // don't show this path
         return null
     }
 }

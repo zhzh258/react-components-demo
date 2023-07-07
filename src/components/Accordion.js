@@ -20,7 +20,7 @@ function Accordion({ items }) {
 
         return (
             <div className="border-x border-t rounded" key={index}>
-                <div className="flex items-center justify-between bg-gray-300 border-b p-3 cursor-pointer" onClick={handleClick}>
+                <div className="flex items-center justify-between bg-violet-300 border-b p-3 cursor-pointer" onClick={handleClick}>
                     <span>{item.label}</span>
                     <span>{icon}</span>
                 </div>
@@ -30,7 +30,12 @@ function Accordion({ items }) {
     })
 
     return (
-        <div>{renderedItems}</div>
+        <div className="w-2/3">
+            {renderedItems}
+            <br></br>
+            <p>You are currently at Accordion "{expandedIndex === -1 ? "NONE" : items[expandedIndex].label}"</p>
+        </div>
+        
     )
 }
 

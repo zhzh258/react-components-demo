@@ -15,9 +15,9 @@ function DropdownPage() {
     }
 
     const options_1 = [
-        { label: "Choose Red", value: "red"},
-        { label: "Choose Green", value: "green"},
-        { label: "Choose Blue", value: "blue"},
+        { label: "Prefer Red", value: "red"},
+        { label: "Prefer Green", value: "green"},
+        { label: "Prefer Blue", value: "blue"},
     ]
 
     const options_2 = [
@@ -27,9 +27,13 @@ function DropdownPage() {
     ]
   
     return (
-        <div className="flex">
-            <Dropdown options={options_1} value={selection_1} onSelect={handleSelect_1}/>
-            <Dropdown options={options_2} value={selection_2} onSelect={handleSelect_2}/>
+        <div>
+            <div className="flex">
+                <Dropdown options={options_1} value={selection_1} onSelect={handleSelect_1}/>
+                <Dropdown options={options_2} value={selection_2} onSelect={handleSelect_2}/>
+            </div>
+            <br></br>
+            <p>Your Selection:  {selection_1 ? selection_1.value : "NONE"}  +  {selection_2 ? selection_2.value : "NONE"}</p>
         </div>
     )
 }
